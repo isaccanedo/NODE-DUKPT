@@ -1,0 +1,69 @@
+{
+  "name": "dukpt",
+  "version": "3.0.0",
+  "description": "Node JS Library for Derived Unique Key Per Transaction (DUKPT) Encryption",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "gulp test",
+    "build": "npm run test && babel ./src --out-dir ./dist",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpjayasekara/node-dukpt.git"
+  },
+  "keywords": [
+    "dukpt",
+    "encryption",
+    "security",
+    "payments"
+  ],
+  "author": "Isac Canedo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "4.9.1"
+          },
+          "modules": "commonjs",
+          "useBuiltIns": false,
+          "debug": true
+        }
+      ]
+    ],
+    "sourceMaps": true,
+    "retainLines": true,
+    "plugins": []
+  },
+  "homepage": "https://github.com/dpjayasekara/node-dukpt#readme",
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.14.3",
+    "gulp": "3.9.1",
+    "gulp-coveralls": "0.1.4",
+    "gulp-eslint": "3.0.1",
+    "gulp-istanbul": "1.1.1",
+    "gulp-mocha": "3.0.1",
+    "randexp": "0.4.4",
+    "should": "11.1.2",
+    "sinon": "1.17.7"
+  },
+  "dependencies": {
+    "aes-js": "2.1.0"
+  }
+}
